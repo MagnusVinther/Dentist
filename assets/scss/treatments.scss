@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+$bgcolor: #E5f2f6;
+$bgsection: #6DA6C7;
+$buttoncolor: #32677A;
+
+html, body {
+    margin: auto;
+    max-width: 1280px;
+    background-color: $bgcolor;
+    font-family: 'Montserrat', sans-serif;
+    background:url(/assets/images/nicewaitingroom.jpg);
+    opacity: 90%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+main {
+    margin: auto;
+    width: 70%;
+    
+    article {
+        border: 3px black solid;
+        margin-bottom: 1em;
+        background-color: $bgsection;
+
+        header {
+            padding-bottom: .5em;
+            border-bottom: 3px black dotted;
+
+            h3 {
+                font-size: 2vw;
+                padding-left: .5em;
+                padding-top: .5em;
+            }
+        }
+        ul {
+            border: 3px, 0, 0, 0 solid black;
+            line-height: 2;
+            list-style: none;
+            padding-left: .5em;
+
+            li {
+                display: grid;
+                grid-template-columns: 85% 15%;
+                grid-template-rows: auto auto auto auto;
+                font-size: 1.3vw;
+                line-height: 3vw;
+
+                span {
+                    justify-content: end;
+                }
+            }
+        }
+    }
+
+    button {
+        display: flex;
+        height: 2em;
+        width: 10em;
+        font-size: 2vw;
+        background-color: $buttoncolor;
+        justify-content: center;
+        align-items: center;
+        border-radius: .2em;
+        margin: auto;
+    }
+}
+
+h1 {
+    line-height: 10vw;
+    font-size: 4vw;
+    color: white;
+    -webkit-text-stroke: 2px black;
+}
