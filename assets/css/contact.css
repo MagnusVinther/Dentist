@@ -24,13 +24,15 @@ main article {
   background-color: #6DA6C7;
   padding-left: 2%;
   padding-right: 2%;
+  margin: auto;
 }
 
 main article figure {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 46% 46%;
-      grid-template-columns: 46% 46%;
+  margin: auto;
+  -ms-grid-columns: 47% 47%;
+      grid-template-columns: 47% 47%;
   gap: 6%;
   -ms-grid-rows: auto;
       grid-template-rows: auto;
@@ -39,7 +41,6 @@ main article figure {
 
 main article figure img {
   width: 100%;
-  height: auto;
 }
 
 main article figure figcaption {
@@ -52,5 +53,78 @@ h1 {
   font-size: 4vw;
   color: whitesmoke;
   -webkit-text-stroke: 2px black;
+}
+
+input#acceptCheck {
+  height: 15px;
+  width: 15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contactBtn {
+  background: #32677A;
+  color: white;
+  -webkit-text-stroke: .5px black;
+  width: 29%;
+  border-radius: 10px;
+  padding: 1%;
+  height: 20%;
+  margin-bottom: 2%;
+  margin-left: 2%;
+  resize: none;
+  font-size: 1.3vw;
+}
+
+#labelText {
+  margin-bottom: 2%;
+  height: 2vw;
+}
+
+form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 49% 49%;
+      grid-template-columns: 49% 49%;
+  gap: 2%;
+  margin: 2% auto;
+}
+
+form input {
+  width: 60%;
+}
+
+form #firstname, form #lastname, form #email, form #message {
+  border-radius: 10px;
+  padding: 1%;
+  font-size: 1.3vw;
+  height: 20%;
+  margin-bottom: 2%;
+  margin-left: 2%;
+  resize: none;
+}
+
+form label {
+  padding-left: 2%;
+  font-size: 1vw;
+  line-height: 2vw;
+}
+
+form textarea {
+  width: 60%;
+  font-size: 1.3vw;
+  height: 100%;
+}
+
+form fieldset legend {
+  font-size: 2vw;
+  padding-left: 1%;
+}
+
+iframe {
+  width: 100%;
+  height: 94.7%;
+  margin-top: 3.3%;
 }
 /*# sourceMappingURL=contact.css.map */
