@@ -1,17 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-body{
+body, html{
     background-color: #E5F2F6;
+    margin: auto;
+    max-width: 1280px;
+
 }
 
-main{
-    max-width: 1280px;
-    margin: auto;
 
+main{
+    width: 70%;
+    margin: auto;
+    
+    article {
+        width: 100%;
+        background-color: #6DA6C7;
+    }
     // MEET US
     .meet-us{
         font-family: 'Montserrat', sans-serif;
-        padding-left: 7.5vw; 
+        padding-left: 2%;
 
         h1{
             font-size: 7.28vh;
@@ -24,7 +32,7 @@ main{
     }
 
     #meet-cards{
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Montserrat', sans-serif; 
 
         .meet-content{
             display: flex;
@@ -40,7 +48,7 @@ main{
                 text-align: center;
 
                 img{
-                    width: 100%;
+                    min-width: 100%;
                     max-width: 10vw;
                     min-height: 45%;
                 }
@@ -58,9 +66,24 @@ main{
     } 
 }
 
-@media (max-width: 991px){
+@media screen and (min-width: 1280px){
+    #meet-cards{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+    }
+}
+
+@media (max-width: 768px){
+    #meet-content{
+        width: 100%;
+    }
+    
+    main{
+        width: 95%;
+    }
+
     section{
-        padding: 100px 50px;
+        padding: 2% 2%;
     }
     .meet-people{
         width: 30%;
