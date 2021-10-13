@@ -1,0 +1,25 @@
+.notificationBanner {
+	text-align: center;
+	background-color: green;
+	color: white;
+	padding: 2rem;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 999;
+	transform: translateY(-100%);
+	animation: slideIn 5s ease-out;
+	font-size: 1.5rem;
+}
+
+@keyframes slideIn {
+	0%,
+	100% {
+		transform: translateY(-100%);
+	}
+	15%,
+	85% {
+		transform: translateY(0%);
+	}
+}
