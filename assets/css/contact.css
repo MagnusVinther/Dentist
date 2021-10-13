@@ -27,32 +27,37 @@ main article {
   margin: auto;
 }
 
+main article h1 {
+  line-height: 10vw;
+  font-size: 4vw;
+  color: whitesmoke;
+  -webkit-text-stroke: 2px black;
+}
+
+main article p {
+  font-size: 1.3vw;
+}
+
 main article figure {
   display: -ms-grid;
   display: grid;
   margin: auto;
-  -ms-grid-columns: 47% 47%;
-      grid-template-columns: 47% 47%;
-  gap: 6%;
+  -ms-grid-columns: 48% 40%;
+      grid-template-columns: 48% 40%;
+  gap: 11%;
   -ms-grid-rows: auto;
       grid-template-rows: auto;
   padding-bottom: 3em;
 }
 
 main article figure img {
-  width: 100%;
+  width: 27vw;
+  padding-top: 6.8%;
 }
 
 main article figure figcaption {
   width: 100%;
   text-align: justify;
-}
-
-h1 {
-  line-height: 10vw;
-  font-size: 4vw;
-  color: whitesmoke;
-  -webkit-text-stroke: 2px black;
 }
 
 input#acceptCheck {
