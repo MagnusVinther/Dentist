@@ -7,12 +7,14 @@
 		<title>Hvidt Smil</title>
 
 		<link rel="stylesheet" href="assets/css/index.css" />
+		<script src="assets/js/nav.js" defer></script>
+		<script src="assets/js/slider.js" defer></script>
 	</head>
 	<body>
 		<header>
 			<nav id="mainNav">
 				<img src="assets/images/Hvidtsmillogo.svg" alt="logo" class="logo" />
-				<ul>
+				<ul id="burger_menu">
 					<li><a href="#" class="link">Behandlinger</a></li>
 					<li><a href="#" class="link">Booking</a></li>
 					<li><a href="#" class="link">Kontakt</a></li>
@@ -20,11 +22,14 @@
 					<li><a href="#" class="link">Tandlægeskræk</a></li>
 				</ul>
 				<a href="#" class="btn">Booking</a>
+				<div id="burger">
+					<div id="burger_icon"></div>
+				</div>
 			</nav>
 		</header>
 		<main>
 			<div id="slider">
-				<div id="slider_controls">
+				<div id="slider_controls" class="imgOne">
 					<a href="#" class="arrow-left"
 						><svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -66,7 +71,7 @@
 						</svg>
 					</a>
 				</div>
-				<div id="slider_images">
+				<div id="slider_images" class="imgOne">
 					<img src="assets/images/hero1.jpg" alt="hero billede1" />
 					<img src="assets/images/hero2.jpg" alt="hero billede2" />
 					<img src="assets/images/hero3.jpg" alt="hero billede3" />
@@ -291,8 +296,5 @@
 				</p>
 			</div>
 		</footer>
-		<form action="">
-			<input type="submit" value="Send" />
-		</form>
 	</body>
 </html>
