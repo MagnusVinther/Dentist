@@ -145,6 +145,7 @@ div#calenderControl {
 	text-align: center;
 	padding: 1rem;
 	font-size: 1.3rem;
+	z-index: 999;
 	transform: translateY(-100%);
 	animation: notification 5s ease-in-out;
 }
