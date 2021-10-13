@@ -19,6 +19,7 @@ $transitionLong: 0s;
 
 :root {
 	font-family: "Montserrat", sans-serif;
+	scroll-behavior: smooth;
 }
 
 a {
@@ -201,6 +202,8 @@ header {
 		}
 	}
 	> article {
+		border-left: 2px solid black;
+		padding-left: 4vh;
 		min-width: 270px;
 		text-align: center;
 		display: flex;
