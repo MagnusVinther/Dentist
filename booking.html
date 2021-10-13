@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Hvidt Smil - Booking</title>
+
+		<link rel="stylesheet" href="assets/css/booking.css" />
+		<script src="assets/js/calender.js" defer></script>
+	</head>
+	<body>
+		<main>
+			<h1>Booking</h1>
+			<form id="calenderForm" action="" method="post">
+				<fieldset>
+					<input
+						list="treaters"
+						name="treater"
+						id="treater"
+						placeholder="Behandler"
+						required
+					/>
+					<datalist id="treaters">
+						<option value="Hanne"></option>
+						<option value="Lis"></option>
+						<option value="Gert"></option>
+						<option value="Gertrud"></option>
+						<option value="Bertram"></option>
+					</datalist>
+
+					<input
+						list="treatmentList"
+						name="treatment"
+						id="treatment"
+						placeholder="Behandling"
+						required
+					/>
+					<datalist id="treatmentList">
+						<option value="Rod Behandling"></option>
+						<option value="Tand Eftersyn"></option>
+						<option value="Udbedring af Huller"></option>
+					</datalist>
+
+					<input
+						list="timeList"
+						name="time"
+						id="calenderTime"
+						placeholder="Tid"
+						required
+					/>
+					<datalist id="timeList">
+						<option value="08:30"></option>
+						<option value="09:00"></option>
+						<option value="09:30"></option>
+						<option value="10:00"></option>
+						<option value="10:30"></option>
+						<option value="11:00"></option>
+						<option value="11:30"></option>
+						<option value="13:00"></option>
+						<option value="13:30"></option>
+						<option value="14:00"></option>
+						<option value="14:30"></option>
+						<option value="15:00"></option>
+						<option value="15:30"></option>
+					</datalist>
+				</fieldset>
+
+				<div id="calenderControl">
+					<a href="#">◄◄</a>
+					<a href="#">◄</a>
+					<textarea cols="1" rows="1" disabled>Year</textarea>
+					<textarea cols="1" rows="1" disabled>Month</textarea>
+					<a href="#">►</a>
+					<a href="#">►►</a>
+					<div id="calenderView"></div>
+				</div>
+
+				<label for="messageToTreaters">Besked til Behandler</label>
+				<textarea
+					name="messageToTreater"
+					id="messageToTreater"
+					placeholder="Besked"
+					required
+				></textarea>
+				<input type="submit" value="Send" />
+			</form>
+		</main>
+	</body>
+</html>
