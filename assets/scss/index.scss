@@ -138,6 +138,7 @@ header {
 		display: flex;
 		justify-content: space-between;
 		padding: 0 2vw;
+		z-index: 99;
 		.arrow-left {
 		}
 		.arrow-right {
@@ -146,7 +147,15 @@ header {
 	#slider_images {
 		width: 301%;
 		display: flex;
-		//transform: translateX(calc(-100% / 3));
+		&.imgOne {
+			transform: translateX(calc(0));
+		}
+		&.imgTwo {
+			transform: translateX(calc(-100% / 3));
+		}
+		&.imgThree {
+			transform: translateX(calc(-100% / 3 * 2));
+		}
 		img {
 			width: calc(100% / 3);
 		}
