@@ -3,6 +3,12 @@ $offsiteColorSec: #57717a;
 $mainColor: #6da6c7;
 $borderColor: #707070;
 
+$copycolor: black;
+
+$transitionShort: 0.1s;
+$transitionMid: 0.4s;
+$transitionLong: 0s;
+
 * {
 	margin: 0;
 	padding: 0;
@@ -28,6 +34,11 @@ li,
 figcaption {
 	color: white;
 }
+
+#burger {
+	display: none;
+}
+
 .flex {
 	display: flex;
 }
@@ -84,6 +95,7 @@ header {
 		position: fixed;
 		top: 0;
 		left: 0;
+		min-height: 100px;
 		ul {
 			list-style: none;
 			display: flex;
@@ -146,8 +158,10 @@ header {
 	display: flex;
 	padding: 5vh;
 	gap: 5vh;
+	flex-wrap: wrap;
 	> section.flex {
 		flex: 3;
+		min-width: 270px;
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
@@ -172,6 +186,7 @@ header {
 		}
 	}
 	> article {
+		min-width: 270px;
 		text-align: center;
 		display: flex;
 		flex-direction: column;
@@ -363,6 +378,92 @@ footer {
 	#slider {
 		.flex {
 			width: 70%;
+		}
+	}
+	#burger_menu {
+		position: absolute;
+		left: 100%;
+		top: 0;
+		overflow-x: hidden;
+		list-style: none;
+		width: 100vw;
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		padding: 5vh 10vw;
+		justify-content: center;
+		gap: 4vh;
+		transition: left 0.5s 0.2s ease-out;
+		background-color: rgba(0, 0, 0, 0.5);
+		justify-content: space-evenly;
+	}
+
+	#burger {
+		z-index: 999;
+		width: 80px;
+		height: 80px;
+		position: relative;
+		transition-duration: $transitionLong;
+		display: block;
+		margin: 0px 40px;
+		cursor: pointer;
+		//margin-left: auto;
+
+		&_icon {
+			transition-duration: 0s;
+			transition-delay: 0.2s;
+			height: 14px;
+			width: 80px;
+			top: 30px;
+			background-color: $copycolor;
+			border-radius: 20px;
+			position: absolute;
+
+			&:before {
+				left: 0;
+				position: absolute;
+				top: -25px;
+				height: 14px;
+				width: 80px;
+				background-color: $copycolor;
+				content: "";
+				border-radius: 20px;
+				transition: transform $transitionMid, top $transitionMid $transitionMid;
+			}
+
+			&:after {
+				left: 0;
+				position: absolute;
+				top: 25px;
+				height: 14px;
+				width: 80px;
+				background-color: $copycolor;
+				content: "";
+				border-radius: 20px;
+				transition: transform $transitionMid, top $transitionMid $transitionMid;
+			}
+		}
+	}
+
+	.open {
+		#burger_icon {
+			transition-duration: 0s;
+			transition-delay: $transitionMid;
+			background: transparent;
+			&:before {
+				transition: top $transitionMid, transform $transitionMid $transitionMid;
+				top: 0px;
+				transform: rotateZ(-45deg);
+			}
+
+			&:after {
+				transition: top $transitionMid, transform $transitionMid $transitionMid;
+				top: 0px;
+				transform: rotateZ(45deg);
+			}
+		}
+		#burger_menu {
+			left: 0;
 		}
 	}
 }
