@@ -22,12 +22,14 @@ main .meet-us {
 
 main .meet-us h1 {
   font-size: 7.28vh;
-  margin-bottom: 1vh;
+  margin-bottom: .5vw;
+  padding: 2%;
 }
 
 main .meet-us p {
-  max-width: 50%;
-  font-size: 2.08vh;
+  max-width: 60%;
+  font-size: 1.2vw;
+  padding: 2%;
 }
 
 main #meet-cards {
@@ -64,12 +66,12 @@ main #meet-cards .meet-content .meet-people img {
 }
 
 main #meet-cards .meet-content .meet-people h5 {
-  font-size: 2.34vh;
+  font-size: 1.6vw;
   margin: 1vh;
 }
 
 main #meet-cards .meet-content .meet-people p {
-  font-size: 2.08vh;
+  font-size: 1.2vw;
 }
 
 @media screen and (min-width: 1280px) {
@@ -106,3 +108,4 @@ main #meet-cards .meet-content .meet-people p {
     padding: 10px;
   }
 }
+/*# sourceMappingURL=meetus.css.map */

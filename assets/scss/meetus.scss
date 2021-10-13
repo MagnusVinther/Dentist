@@ -23,11 +23,13 @@ main{
 
         h1{
             font-size: 7.28vh;
-            margin-bottom: 1vh;
+            margin-bottom: .5vw;
+            padding: 2%;
         }
         p{
-            max-width: 50%;
-            font-size: 2.08vh;
+            max-width: 60%;
+            font-size: 1.2vw;
+            padding: 2%;
         }
     }
 
@@ -54,12 +56,12 @@ main{
                 }
 
                 h5{
-                    font-size: 2.34vh;
+                    font-size: 1.6vw;
                     margin: 1vh;
                 }
 
                 p{
-                    font-size: 2.08vh;
+                    font-size: 1.2vw;
                 }
             }
         }
