@@ -1,136 +1,166 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+$bgcolor: #e5f2f6;
+$bgsection: #6da6c7;
+$buttoncolor: #32677a;
 
 * {
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	box-sizing: border-box;
 }
 
-$bgcolor: #E5f2f6;
-$bgsection: #6DA6C7;
-$buttoncolor: #32677A;
+html,
+body {
+	margin: auto;
+	max-width: 1280px;
+	background-color: $bgcolor;
+	font-family: "Montserrat", sans-serif;
+}
 
-html, body {
-    margin: auto;
-    max-width: 1280px;
-    background-color: $bgcolor;
-    font-family: 'Montserrat', sans-serif;
+.notificationBanner {
+	text-align: center;
+	background-color: green;
+	color: white;
+	padding: 2rem;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 999;
+	transform: translateY(-100%);
+	animation: slideIn 5s ease-out;
+	font-size: 1.5rem;
+}
+
+@keyframes slideIn {
+	0%,
+	100% {
+		transform: translateY(-100%);
+	}
+	15%,
+	85% {
+		transform: translateY(0%);
+	}
+}
+
+::placeholder {
+	font-family: "Montserrat", sans-serif;
 }
 
 main {
-    margin: auto;
-    width: 70%;
-    
-    article{
-        width: 100%;
-        background-color: $bgsection;
-        padding-left: 2%;
-        padding-right: 2%;
-        margin: auto;
-        
-        h1 {
-            line-height: 10vw;
-            font-size: 4vw;
-            color: whitesmoke;
-            -webkit-text-stroke: 2px black;
-        }
+	margin: auto;
+	width: 70%;
 
-        p {
-            font-size: 1.3vw;
-        }
+	article {
+		width: 100%;
+		background-color: $bgsection;
+		padding-left: 2%;
+		padding-right: 2%;
+		margin: auto;
 
-        figure {
-            display: grid;
-            margin: auto;
-            grid-template-columns: 48% 40%;
-            gap: 11%;
-            grid-template-rows: auto;
-            padding-bottom: 3em;
+		h1 {
+			line-height: 10vw;
+			font-size: 4vw;
+			color: whitesmoke;
+			-webkit-text-stroke: 2px black;
+		}
 
-            img {
-                width: 27vw;
-                padding-top: 6.8%;
-           }
+		p {
+			font-size: 1.3vw;
+		}
 
-           figcaption {
-                width: 100%;
-                text-align: justify;
-            }
-        }
-    }
+		figure {
+			display: grid;
+			margin: auto;
+			grid-template-columns: 48% 40%;
+			gap: 11%;
+			grid-template-rows: auto;
+			padding-bottom: 3em;
+
+			img {
+				width: 27vw;
+				padding-top: 6.8%;
+			}
+
+			figcaption {
+				width: 100%;
+				text-align: justify;
+			}
+		}
+	}
 }
 
-
 input#acceptCheck {
-    height: 15px;
-    width: 15px;
-    justify-content: center;
-    
-    
+	height: 15px;
+	width: 15px;
+	justify-content: center;
 }
 
 .contactBtn {
-    background: $buttoncolor;
-    color: white;
-    -webkit-text-stroke: .5px black;
-    width: 29%;
-    border-radius: 10px;
-    padding: 1%;
-    height: 20%;
-    margin-bottom: 2%;
-    margin-left: 2%;
-    resize: none;
-    font-size: 1.3vw;
+	background: $buttoncolor;
+	color: white;
+	-webkit-text-stroke: 0.5px black;
+	width: 29%;
+	border-radius: 10px;
+	padding: 1%;
+	height: 20%;
+	margin-bottom: 2%;
+	margin-left: 2%;
+	resize: none;
+	font-size: 1.3vw;
 }
 
 #labelText {
-    margin-bottom: 2%;
-    height: 2vw;
+	margin-bottom: 2%;
+	height: 2vw;
 }
 
 form {
-    display: grid;
-    grid-template-columns: 49% 49%;
-    gap: 2%;
-    margin: 2% auto;
+	display: grid;
+	grid-template-columns: 49% 49%;
+	gap: 2%;
+	margin: 2% auto;
 
-    input {
-        width: 60%;
-    }
+	input {
+		width: 60%;
+	}
 
-    #firstname, #lastname, #email, #message {
-        border-radius: 10px;
-        padding: 1%;
-        font-size: 1.3vw;
-        height: 20%;
-        margin-bottom: 2%;
-        margin-left: 2%;
-        resize: none;
-    }
+	#firstname,
+	#lastname,
+	#email,
+	#message {
+		border-radius: 10px;
+		padding: 1%;
+		font-size: 1.3vw;
+		height: 20%;
+		margin-bottom: 2%;
+		margin-left: 2%;
+		resize: none;
+	}
 
-    label {
-        padding-left: 2%;
-        font-size: 1vw;
-        line-height: 2vw;
-    }
+	label {
+		padding-left: 2%;
+		font-size: 1vw;
+		line-height: 2vw;
+	}
 
-    textarea {
-        width: 60%;
-        font-size: 1.3vw;
-        height: 100%;
-    }
-    fieldset {
-
-        legend {
-            font-size: 2vw;
-            padding-left: 1%;
-        }
-    }
+	textarea {
+		width: 60%;
+		font-size: 1.3vw;
+		height: 100%;
+	}
+	fieldset {
+		legend {
+			font-size: 2vw;
+			padding-left: 1%;
+		}
+	}
 }
 
 iframe {
-    width: 100%;
-    height: 94.7%;
-    margin-top: 3.3%;
+	width: 100%;
+	height: 94.7%;
+	margin-top: 3.3%;
 }
