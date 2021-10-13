@@ -4,9 +4,9 @@ $bgcolor: #e5f2f6;
 $bgsection: #6da6c7;
 $buttoncolor: #32677a;
 
-$bgcolor: #E5f2f6;
-$bgsection: #6DA6C7;
-$buttoncolor: #32677A;
+$bgcolor: #e5f2f6;
+$bgsection: #6da6c7;
+$buttoncolor: #32677a;
 
 * {
 	padding: 0;
@@ -16,15 +16,12 @@ $buttoncolor: #32677A;
 }
 
 ::placeholder {
-
 	font-family: "Montserrat", sans-serif;
 }
-
 
 html,
 body {
 	margin: auto;
-	max-width: 1280px;
 	background-color: $bgcolor;
 	font-family: "Montserrat", sans-serif;
 }
@@ -55,13 +52,10 @@ body {
 	}
 }
 
-::placeholder {
-	font-family: "Montserrat", sans-serif;
-}
-
 main {
 	margin: auto;
 	width: 70%;
+	max-width: 1280px;
 
 	article {
 		width: 100%;
