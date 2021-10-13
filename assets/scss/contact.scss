@@ -4,6 +4,10 @@ $bgcolor: #e5f2f6;
 $bgsection: #6da6c7;
 $buttoncolor: #32677a;
 
+$bgcolor: #E5f2f6;
+$bgsection: #6DA6C7;
+$buttoncolor: #32677A;
+
 * {
 	padding: 0;
 	margin: 0;
@@ -12,8 +16,10 @@ $buttoncolor: #32677a;
 }
 
 ::placeholder {
+
 	font-family: "Montserrat", sans-serif;
 }
+
 
 html,
 body {
