@@ -80,6 +80,10 @@ header {
 		> a {
 			align-self: center;
 		}
+		h2 {
+			min-width: 250px;
+			display: none;
+		}
 	}
 }
 
@@ -144,6 +148,9 @@ footer {
 			}
 			> a.btn {
 				display: none;
+			}
+			h2 {
+				display: block;
 			}
 		}
 	}
@@ -246,6 +253,16 @@ footer {
 		}
 		#burger_menu {
 			left: 0;
+		}
+	}
+}
+
+@media screen and (max-width: 650px) {
+	header {
+		nav {
+			h2 {
+				display: none;
+			}
 		}
 	}
 }
