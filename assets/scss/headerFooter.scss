@@ -67,6 +67,7 @@ header {
 		}
 		.logo {
 			height: 100%;
+			padding: 0 30px;
 		}
 		ul {
 			list-style: none;
@@ -135,7 +136,18 @@ footer {
 		}
 	}
 }
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 980px) {
+	header {
+		nav {
+			.logo {
+				padding: 0 30px;
+			}
+			> a.btn {
+				display: none;
+			}
+		}
+	}
+
 	footer.flex {
 		.maxWidth {
 			h2,
