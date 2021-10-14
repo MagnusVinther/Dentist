@@ -115,8 +115,6 @@ main {
 		justify-content: space-between;
 		flex-wrap: wrap;
 		gap: 2vh;
-		> h2 {
-		}
 		> a {
 			margin-bottom: auto;
 		}
@@ -128,8 +126,6 @@ main {
 			> figure {
 				> img {
 					width: 100%;
-				}
-				> figcaption {
 				}
 			}
 		}
@@ -143,10 +139,6 @@ main {
 		flex-direction: column;
 		gap: 2vh;
 		flex: 1;
-		> h3 {
-		}
-		> p {
-		}
 		> a {
 			margin: 0 auto;
 		}
@@ -255,9 +247,5 @@ main {
 		text-align: center;
 		align-items: center;
 		min-width: 270px;
-		> h5 {
-		}
-		> p {
-		}
 	}
 }
