@@ -110,9 +110,10 @@ main {
 	padding: 5vh;
 	gap: 5vh;
 	flex-wrap: wrap;
+	max-width: 100%;
 	> section.flex {
 		flex: 3;
-		min-width: 330px;
+		min-width: 200px;
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
@@ -135,7 +136,7 @@ main {
 	> article {
 		border-left: 2px solid black;
 		padding-left: 4vh;
-		min-width: 380px;
+		min-width: 200px;
 		text-align: center;
 		display: flex;
 		flex-direction: column;
@@ -143,6 +144,9 @@ main {
 		flex: 1;
 		> a {
 			margin: 0 auto;
+			h3 {
+				font-size: 1vh;
+			}
 		}
 	}
 }
@@ -248,6 +252,16 @@ main {
 		flex-direction: column;
 		text-align: center;
 		align-items: center;
-		min-width: 270px;
+		min-width: 200px;
+	}
+}
+
+@media screen and (max-width: 620px) {
+	#treatments {
+		flex-direction: column;
+
+		> article {
+			border-left: none;
+		}
 	}
 }
