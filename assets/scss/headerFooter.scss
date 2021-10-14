@@ -67,6 +67,7 @@ header {
 		}
 		.logo {
 			height: 100%;
+			max-width: 100%;
 			padding: 0 30px;
 		}
 		ul {
@@ -130,7 +131,7 @@ footer {
 		> img.logo {
 			flex: 1;
 			width: 20%;
-			min-width: 330px;
+			min-width: 200px;
 		}
 		> p {
 			text-align: center;
