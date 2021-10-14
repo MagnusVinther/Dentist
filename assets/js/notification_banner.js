@@ -1,3 +1,4 @@
+//function creating notification banner
 function createNotificationBanner(notificationMessage) {
 	/** @ Html element for the notification banner*/
 	let notificationBanner = document.createElement("div");
@@ -12,8 +13,10 @@ function createNotificationBanner(notificationMessage) {
 	document.body.prepend(notificationBanner);
 }
 
+//on submit event listener
 document.querySelector("form").addEventListener("submit", (e) => {
 	e.preventDefault();
+	//iteration of elements in form for custom reset
 	for (let element of document.querySelector("form").elements) {
 		if (element.getAttribute("type") == "checkbox") {
 			element.checked = false;
