@@ -215,12 +215,11 @@ calenderControls.forEach((element, i) => {
 	});
 });
 
+//form event on submit
 document.querySelector("#calenderForm").addEventListener("submit", (e) => {
+	//prevent reloading
 	e.preventDefault();
-	console.log(form.elements["treater"].value);
-	console.log(form.elements["treatment"].value);
-	console.log(form.elements["calenderTime"].value);
-	console.log(form.elements["messageToTreater"].value);
+	//create a notification with the notification banner function, and contaginating text
 	createNotificationBanner(
 		"Din tid den " +
 			markedDate.getDate() +
@@ -234,7 +233,10 @@ document.querySelector("#calenderForm").addEventListener("submit", (e) => {
 			form.elements["treater"].value +
 			"."
 	);
+	//resetting form data
 	e.target.reset();
+
+	//prevent reloading
 	return false;
 });
 chooseNewDate(dateToday);
