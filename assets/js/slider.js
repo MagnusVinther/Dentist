@@ -1,3 +1,5 @@
+let slideTime = 10000;
+
 let slider = document.querySelector("#slider_images");
 let sliderControls = document.querySelector("#slider_controls");
 let leftArrow = document.querySelector("#slider #slider_controls .arrow-left");
@@ -38,4 +40,4 @@ function imageSlide(direction) {
 
 timer = setInterval(() => {
 	imageSlide(true);
-}, 3000);
+}, slideTime);
