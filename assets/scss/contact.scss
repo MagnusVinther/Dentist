@@ -91,7 +91,7 @@ input#acceptCheck {
 	width: 15px;
 	justify-content: center;
 }
-
+	
 .contactBtn {
 	background: $buttoncolor;
 	color: white;
@@ -157,4 +157,116 @@ iframe {
 	width: 100%;
 	height: 94.7%;
 	margin-top: 3.3%;
+}
+
+@media screen and (max-width: 980px) {
+	
+	main {
+		margin: auto;
+		width: 95%;
+		max-width: 1280px;
+	
+		article {
+			width: 100%;
+			background-color: $bgsection;
+			padding-left: 2%;
+			padding-right: 2%;
+			margin: auto;
+	
+			h1 {
+				line-height: 15vw;
+				font-size: 8vw;
+				color: whitesmoke;
+				-webkit-text-stroke: 2px black;
+			}
+
+			h3 {
+				font-size: 4.3vw;
+			}
+	
+			p {
+				font-size: 3.3vw;
+			}
+	
+			figure {
+				display: flex;
+				
+	
+				img {
+					display: none;
+					width: auto;
+				}
+	
+				figcaption {
+					width: 100%;
+					text-align: justify;
+				}
+			}
+		}
+	}
+	
+	.contactBtn {
+		font-size: 5vw;
+	}
+	
+	input#acceptCheck {
+		height: 25px;
+		width: 25px;
+	}
+
+	form {
+		display: grid;
+		grid-template-rows: auto auto;
+		grid-template-columns: auto;
+	
+		input {
+			width: 60%;
+		}
+	
+		#firstname,
+		#lastname,
+		#email,
+		#message {
+			font-size: 5.3vw;
+		}
+	
+		label {
+			font-size: 4vw;
+		}
+	
+		textarea {
+			width: 60%;
+			font-size: 3.3vw;
+			height: 100%;
+		}
+		fieldset {
+			justify-content: center;
+			margin: 0 auto;
+			width: 100%;
+			legend {
+				font-size: 7vw;
+				padding-left: 1%;
+			}
+		}
+	}
+
+}
+
+@media screen and (max-width: 520px) {
+
+	main {
+		article {
+			p {
+				font-size: 4.6vw;
+				line-height: 7vw;
+			}
+			h1 {
+				font-size: 12vw;
+			}
+			h3 {
+				font-size: 7vw;
+			}
+		}
+	}
+	
 }
