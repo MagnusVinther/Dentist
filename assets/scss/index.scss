@@ -72,8 +72,16 @@ main {
 		padding: 0 2vw;
 		z-index: 99;
 		.arrow-left {
+			transition: all 300ms ease-out;
+			&:hover {
+				filter: brightness(200%);
+			}
 		}
 		.arrow-right {
+			transition: all 300ms ease-out;
+			&:hover {
+				filter: brightness(200%);
+			}
 		}
 	}
 	#slider_images {
