@@ -12,8 +12,18 @@ function createNotificationBanner(notificationMessage) {
 	document.body.prepend(notificationBanner);
 }
 
-document.querySelector("form").addEventListener("submit", () => {
+document.querySelector("form").addEventListener("submit", (e) => {
+	e.preventDefault();
+	for (let element of document.querySelector("form").elements) {
+		if (element.getAttribute("type") == "checkbox") {
+			element.checked = false;
+		} else if (element.value != null && element.value != "Nulstil") {
+			element.value = "";
+		}
+		//console.log(element.getAttribute("type"));
+	}
 	createNotificationBanner(
 		"Tak for din henvendelse vi kontakter dig hurtigst muligt"
 	);
+	return false;
 });
