@@ -227,19 +227,11 @@ iframe {
 		#lastname,
 		#email,
 		#message {
-			border-radius: 10px;
-			padding: 1%;
 			font-size: 5.3vw;
-			height: 20%;
-			margin-bottom: 2%;
-			margin-left: 2%;
-			justify-content: center;
 		}
 	
 		label {
-			padding-left: 2%;
 			font-size: 4vw;
-			line-height: 2vw;
 		}
 	
 		textarea {
@@ -258,4 +250,23 @@ iframe {
 		}
 	}
 
+}
+
+@media screen and (max-width: 520px) {
+
+	main {
+		article {
+			p {
+				font-size: 4.6vw;
+				line-height: 7vw;
+			}
+			h1 {
+				font-size: 12vw;
+			}
+			h3 {
+				font-size: 7vw;
+			}
+		}
+	}
+	
 }
